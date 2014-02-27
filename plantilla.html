@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>aplicacion con salida en HTML</title>
+	</head>
+	<body>
+		<h1>El tiempo en Andalucia</h1>
+		{% for provincia in provincias %}
+		<h3>{{ provincia[temp1] }}</h3>
+		<ul>
+			<li>Temperatura minima prevista: {{ provincia[temp1]}}</li>	
+			</ul>
+	</body>		{%- endfor %}
+</html>
